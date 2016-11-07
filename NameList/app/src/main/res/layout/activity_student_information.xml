@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_student_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.c_jecy.namelist.StudentInformation">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="210dp"
+        android:textSize="50sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/stu_name"
+        android:gravity="left"
+        android:layout_y="25dip"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="210dp"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/stu_class"
+        android:gravity="left"
+        android:layout_y="100dip"
+        />
+    <TextView
+        android:text="TextView"
+        android:layout_width="330dp"
+        android:textSize="40sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/stu_id"
+        android:gravity="center"
+        android:layout_y="180dip"/>
+
+    <RadioGroup
+        android:id="@+id/classselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="35dp"
+        android:layout_y="330dp">
+        <RadioButton
+            android:text="第一节课"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/classButton1" />
+        <RadioButton
+            android:text="第二节课"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/classButton2" />
+    </RadioGroup>
+
+    <!-- 
+        <Switch
+            android:text="第二节课"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="59dp"
+            android:layout_y="321dp"
+            android:id="@+id/switch2" />
+
+        <Switch
+            android:text="第三节课"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="223dp"
+            android:layout_y="373dp"
+            android:id="@+id/switch3" />
+
+        <Switch
+            android:text="第四节课"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="70dp"
+            android:layout_y="414dp"
+            android:id="@+id/switch4" />
+
+        <Switch
+            android:text="第五节课"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="193dp"
+            android:layout_y="472dp"
+            android:id="@+id/switch5" />
+
+        <Switch
+            android:text="第一节课"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="191dp"
+            android:layout_y="289dp"
+            android:id="@+id/switch1" />
+-->
+
+    <RadioGroup
+        android:id="@+id/condition"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_x="234dp"
+        android:layout_y="313dp" >
+        <RadioButton
+            android:text="在勤"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton0" />
+        <RadioButton
+            android:text="迟到"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton1" />
+        <RadioButton
+            android:text="早退"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2" />
+        <RadioButton
+            android:text="旷课"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton3" />
+        <RadioButton
+            android:text="病假"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton4" />
+    </RadioGroup>
+
+    <Button
+        android:text="save"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/button"
+        android:layout_x="63dp"
+        android:layout_y="433dp"
+        android:textSize="30sp"
+
+        />
+
+    <ImageView
+        android:id="@+id/stu_image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:contentDescription="img"
+        android:layout_x="210dp"
+        android:layout_y="50dp" />
+
+
+</AbsoluteLayout>
